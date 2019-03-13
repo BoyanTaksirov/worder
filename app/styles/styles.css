@@ -1,0 +1,1284 @@
+:root{
+    --lightColor:rgb(215, 237, 255);
+    --darkColor:rgb(32, 53, 77);  
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+body, input {
+    font: menu;
+}
+
+a:link {
+    color: rgb(108, 255, 235);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(0, 132, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(184, 255, 234);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(0, 255, 200);
+  }
+
+.globalContainerClass{  
+    /*display: flex;
+    flex-direction: column;*/
+    width:100%;
+    height:100vh;
+}
+
+.mainMenuBkgClass{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:5.3rem;
+    box-sizing: content-box;
+    background-color: rgb(16, 40, 59);
+    border-bottom: 2px solid white;
+}
+
+.mainMenuButtonsClass{
+    display:inline-block;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(71, 104, 141);  
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+    margin: auto 0.5rem;
+
+    transition: background-color 0.5s;
+}
+
+.mainMenuButtonsClass:hover{
+    background-color:  rgb(66, 139, 207);  
+}
+
+.mainMenuButtonsActiveClass{
+    display:inline-block;
+    width: 10rem;
+    height: 4.4rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 160, 255);  
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+    margin: auto 0.5rem;
+}
+
+.credits{
+    position:absolute;
+    height: 2rem;
+    width: 100%;
+    top: calc(100% - 2rem);
+    background-color: rgb(16, 40, 59);
+    color: white;
+    font-size:0.85rem;
+    text-align: right;
+    z-index: 10000;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.creditsLink{
+    display:inline-block;
+    margin: 0.3rem 1rem;
+    height: 1.5rem;
+    cursor:pointer;
+}
+
+.creditsLink:hover{
+    color:rgb(83, 206, 255);
+}
+
+.mainMenuBkgClass .customButtonClass{
+    box-sizing: border-box;
+}
+
+.mainMenuSecondaryButtonsClass{
+    display:inline-block;
+    width: 6rem;
+    height: 2.4rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(57, 145, 204);  
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+
+    margin: auto 0.5rem;
+
+    transition: background-color 0.5s;
+}
+
+.mainMenuSecondaryButtonsClass:hover{
+    background-color: rgb(78, 184, 255);  
+}
+
+.secondaryButtonsContainerClass{
+    display:flex;
+    flex-direction: row;
+    height: 4rem;
+    margin: auto 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(55, 83, 104);  
+    border: 1px solid rgb(99, 119, 133);
+    padding: 0 1rem;
+}
+
+
+.screensContainerClass{
+    background-color:rgb(0, 174, 255);
+    /*border: 5px solid red;*/
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.homeScreenClass{
+    position:relative;
+    width:100%;
+    min-width: 50rem;
+    min-height: calc(100vh - 5rem);
+    background-color: rgb(115, 199, 255);
+    /*border: 10px solid rgb(0, 255, 85);*/
+    padding: 1rem;
+    text-align:center;  
+}
+
+.wordInputBkgClass{
+    width:100%;
+    min-height: calc(100vh - 5rem);
+    /*background-color: rgb(239, 239, 239);*/
+    background: repeating-linear-gradient(
+        -30deg,     
+        #dae3ec,
+        #dae3ec 10rem,  
+        #dfebf7 10rem,
+        #dfebf7 15rem,
+        #d2e1f3 15rem,
+        #d2e1f3 27rem
+        );
+    padding: 1rem;
+}
+
+.logoClass{
+    position: absolute;
+    height: 50rem;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.12;
+}
+
+.homeTextContainerClass{
+    position: relative;
+    top: 0px;
+    width: 90%;
+    color: rgb(69, 73, 78);
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 3rem;
+    text-align: left;
+    font-weight: 700;
+    /*border: 2px solid green;*/
+    box-sizing: border-box;
+}
+
+.labelClass{
+    color: var(--darkColor);
+    text-align:center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.editWordBkgClass{
+    position: absolute;
+    text-align: center;
+    overflow-y: auto;
+    width:50rem;
+    max-height:85vh;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(112, 112, 112);
+    color: white;
+    font-size: 1rem;
+    background-color:rgb(182, 194, 204);
+    overflow: auto;
+}
+
+.addCategoryBkgClass{
+    position: absolute;
+    text-align: center;
+    width:20rem;
+    max-height:85vh;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(112, 112, 112);
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(49, 54, 63);
+    overflow: auto;
+}
+
+.addCategoryButtonsClass{
+    display: block;
+    height: 2.3rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 145, 0);  
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border: rgb(255, 237, 157) 2px solid;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.addWordOkButtonsClass{
+    display: block;
+    height: 2.3rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 124, 204);  
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: 2px rgb(125, 201, 252) solid;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.wordInputCategorySeparator{
+    width:95%;
+    text-align:center;
+    padding:1rem;
+    max-height:30rem;
+    border-radius: 0.5rem;
+    overflow-y:auto;
+    background-color: rgb(79, 99, 110);
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto;
+}
+
+.wordInputButtonsClass{
+    width: 12rem;
+    height:2.5rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 124, 204);  
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border: 2px rgb(125, 201, 252) solid;
+    margin: 1rem;
+}
+
+.buttonText{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+.wordContainerClass{
+    margin: 0 auto;
+    text-align:center;
+    width:95%;
+    padding: 0.5rem;
+    background-color: rgb(0, 98, 142);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.inputContainerClass{
+    display: inline-block;
+}
+
+.inputContainerWithButtonClass{
+    display: block;
+    width:100%;
+    text-align: center;
+}
+
+.inputContainerCategoryClass{
+    display: block;
+    margin:1rem;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.inputLabelClass{
+    color:  var(--darkColor);
+    font-size: 1.2rem;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.2rem;
+}
+
+.inputFieldClass{
+    display: inline-block;
+    color: var(--darkColor);
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid  var(--darkColor);
+    background-color: rgb(215, 237, 255);
+}
+
+.smallButtonClass{
+    font-size: 0.7rem;
+    width: 3rem;
+    height: 1.2rem;
+    color: white;
+    background-color: rgb(31, 121, 255);
+    border: 1px solid  var(--darkColor);
+    border-radius: 0.2rem;
+    margin: 0.1rem;
+}
+
+.smallButtonClassState2{
+    font-size: 0.7rem;
+    width: 3rem;
+    height: 1.2rem;
+    color: white;
+    background-color:rgb(45, 64, 92);
+    border: 1px solid var(--darkColor);
+    border-radius: 0.2rem;
+    margin: 0.1rem;
+}
+
+.listLabelClass{
+    display: inline-block;
+    width: 35%;
+    height: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    border-right: 1px solid rgb(125, 201, 252);
+    /*box-sizing: content-box;*/
+}
+
+.wmContainerClass{
+    display: block;
+    width: calc(100% - 11rem);
+    color:  var(--darkColor);
+    min-width: 40rem;
+    text-align:center;
+    margin: 0.1rem 1rem;  
+    border: 2px solid rgb(148, 159, 172);
+    border-radius: 0.5rem;  
+}
+
+.wmContainerClass:hover{
+    border: 2px solid rgb(0, 140, 255);
+    background-color:rgb(196, 211, 224);
+}
+
+.wmHeaderClass{
+    display: block;
+    width: calc(100% - 11rem);
+    background-color:  rgb(153, 209, 255);
+    color:  var(--darkColor);
+    min-width: 40rem;
+    text-align:center;
+    margin: 0.1rem 1rem;  
+    border: 2px solid rgb(148, 159, 172);
+    border-radius: 0.5rem;  
+}
+
+.arrowStyle{
+    position: absolute;
+    left: -2rem;
+    background-color: rgb(51, 85, 126);
+    height: 2rem;
+    width: 2rem;
+    -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.tooltipArrow{
+    position: absolute;
+    left: -1rem;
+    background-color: rgb(255, 255, 255);
+    height: 1rem;
+    width: 1rem;
+    -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.tableCellLeft{
+    background-color: rgb(244, 246, 248);
+}
+
+.tableCellLeft:hover{
+    background-color: rgb(215, 235, 255);
+}
+
+.tableCellRight{
+    background-color: rgb(244, 246, 248);
+}
+
+.tableCellRight:hover{
+    background-color: rgb(231, 252, 255);
+}
+
+.editButtonClass{
+    display:inline-block;
+    width: 7rem;
+    font-size: 1rem;
+    color:white;
+    background-color:var(--darkColor);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:0.5rem;
+    margin:auto 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.editButtonClass:hover{
+    background-color:rgb(78, 149, 255); 
+}
+
+.contextContainer{
+    position: absolute;
+    width: 8.1rem;
+    right: 1rem;
+    background-color:rgb(94, 110, 126);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid rgb(73, 83, 97);
+    text-align:center;
+}
+
+.contextButtonClass{
+    display:inline-block;
+    width: 7rem;
+    font-size: 1rem;
+    margin: 0.1rem auto;
+    min-width:5rem;
+    color:white;
+    background-color:rgb(79, 125, 194);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius:0.3rem;
+    padding: 0.1rem;
+    cursor: pointer;
+    top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.contextButtonClass:hover{
+    background-color:rgb(78, 149, 255); 
+}
+
+.contextButtonActiveClass{
+    display:inline-block;
+    width: 7rem;
+    font-size: 1rem;
+    margin: 0.1rem auto;
+    min-width:5rem;
+    color:white;
+    background-color:rgb(255, 81, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius:0.3rem;
+    padding: 0.1rem;
+    cursor: pointer;
+    top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.contextButtonActiveClass:hover{
+    background-color: rgb(255, 108, 40);
+}
+
+.clearAllMarksButton{
+    width: 5rem;
+    font-size: 1rem;
+    color:white;
+    background-color: rgb(255, 81, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:0.5rem;
+    margin: 0.1rem;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.clearAllMarksButton:hover{
+    background-color: rgb(255, 108, 40);
+}
+
+.headerSections{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+.tooltip{
+    position: absolute;
+    width: 8.1rem;
+    right: 1rem;
+    background-color:rgb(94, 110, 126);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    text-align:center;
+}
+
+.customButtonClass{
+    /*position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);*/
+    /*height: 2rem;*/
+    width: 7rem;
+    font-size: 1rem;
+    color:white;
+    background-color:rgb(51, 104, 139);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:0.5rem;
+    margin: auto 0.2rem;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.customButtonClass:hover{
+    background-color:rgb(82, 128, 172); 
+}
+
+.customButtonClassState2{
+    width: 7rem;
+    font-size: 1rem;
+    color:white;
+    background-color:rgb(42, 57, 80);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:0.5rem;
+    margin: auto 0.2rem;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.addWordButton{
+    /*position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);*/
+    /*height: 2rem;*/
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    display: inline-block;
+    color:white;
+    background-color:rgb(0, 155, 51);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:0.5rem;
+    margin: 0.2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.addWordButton:hover{
+    background-color:rgb(0, 184, 61);
+}
+
+.deleteButtonClass{
+    display:inline-block;
+    height: 2rem;
+    width: 7rem;
+    font-size: 1rem;
+    min-width:5rem;
+    color:white;
+    background-color:rgb(255, 85, 42);
+    /*border: 1px solid rgb(252, 233, 125);*/
+    border-radius:0.5rem;
+    margin:auto 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.deleteButtonClass:hover{
+    background-color:rgb(255, 143, 78); 
+}
+
+.dropdownMenuItemClass{
+    display: inline-block;
+    color:  var(--darkColor);
+    font-size: 1.5rem;
+    width:70%;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color:rgb(196, 211, 224);
+    margin: 0.2rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdownMenuItemClass:hover{
+    background-color:rgb(42, 57, 80);
+    color:white;
+}
+
+
+.dropdownMenuActiveItemClass{
+    display: inline-block;
+    color:white;
+    background-color: rgb(255, 171, 74);
+    font-size: 1.5rem;
+    cursor:pointer;
+    width:70%;
+}
+
+.addCategoryDDMenuBkgClass{
+    text-align: left;
+    margin-top: 1rem;
+    height: 10rem;
+    overflow-y:auto;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(0, 98, 142);
+}
+
+.currentSelectionClass{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width:90%;
+    height: 2.5rem;
+    padding: 0.2rem;
+    color: white;
+    background-color:  rgb(77, 140, 167);
+    border-radius:0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.globalTransparentBkg{
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(38, 50, 65, 0.87);
+}
+
+.messageBoxClass{
+    position:absolute;
+    width: 35rem;
+    background-color: rgb(0, 74, 109);
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    padding:2rem;
+    border-radius:1rem;
+}
+
+.messageHolderClass{
+    width: 30rem;
+    color: white;
+    margin: auto auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.infoSectionClass{
+    background-color: rgb(56, 74, 82);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid rgb(78, 205, 255);
+}
+
+.wordListLabelClass{
+    display: inline-block;
+    width: 50%;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2rem;
+    text-align:center;
+    margin: 1rem 0;
+}
+
+.flexibleStandardContainer{
+    background-color:rgb(182, 194, 204);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid rgb(112, 112, 112);
+    text-align:center;
+}
+
+.standardContainer{
+    display: block;
+    color: var(--darkColor);
+    font-size: 1rem;
+    text-align:center;
+    padding: 1rem;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 0.5rem;  
+}
+
+.categoryForSelector{
+    background-color: rgb(44, 56, 66);
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid white;
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.categoryForSelector:hover{
+    background-color: rgb(41, 65, 75);
+}
+
+.categoryForSelectorActive{
+    background-color: rgb(196, 237, 255);
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    color:  rgb(44, 56, 66);
+    font-size: 1rem;
+    border: 2px solid  rgb(44, 56, 66);
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.sectionChooser{
+    background-color: rgb(44, 56, 66);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid white;
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem;
+
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.sectionChooser:hover{
+    background-color: rgb(41, 65, 75);
+}
+
+.sectionChooserActive{
+    background-color: rgb(196, 237, 255);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    color:  rgb(44, 56, 66);
+    font-size: 1rem;
+    border: 2px solid  rgb(44, 56, 66);
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem;
+
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.sectionChooserInactive{
+    background-color: rgb(119, 119, 119);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    color: rgb(228, 228, 228);
+    font-size: 1rem;
+    border: 2px solid rgb(228, 228, 228);
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem;
+
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
+}
+
+.categorySelectorButton{
+    display: block;
+    background-color: rgb(59, 105, 143);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem auto;
+}
+
+.categorySelectorButton:hover{
+    background-color: rgb(68, 136, 165);
+}
+
+.categoryMassSelectorButton{
+    display: block;
+    background-color: rgb(43, 52, 59);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    text-align:center;
+    cursor: pointer;
+    margin: 0.5rem auto;
+}
+
+.categoryMassSelectorButton:hover{
+    background-color: rgb(58, 83, 94);
+}
+
+.categoryContainer{
+    width: 40%;
+    height: 95%;
+    overflow-Y: auto;
+    display: inline-block;
+    border: 1px var(--darkColor) solid;
+    border-radius: 0.5rem;
+}
+
+.wordNumber{
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: rgb(48, 52, 54);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align:center;
+    border-radius: 0.2rem;
+}
+
+.wordDate{
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    color:  var(--darkColor);
+    font-size: 1rem;
+    font-weight: normal;
+    text-align:center;
+    font-style: italic;
+    border-radius: 0.2rem;
+}
+
+.wordMarker{
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: rgb(215, 230, 238);
+    color: rgb(142, 165, 175);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border-radius: 0.2rem;
+    cursor:pointer;
+}
+
+.wordMarkerActive{
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: rgb(255, 73, 17);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border-radius: 0.2rem;
+    cursor:pointer;
+}
+
+.wordMarkerSmall{
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: rgb(215, 230, 238);
+    color: rgb(142, 165, 175);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border: 2px solid rgb(95, 117, 129);
+    border-radius: 0.5rem;
+    cursor:pointer;
+}
+
+.wordMarkerSmallActive{
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: rgb(255, 73, 17);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    cursor:pointer;
+}
+
+.wordLabel{
+    display: inline-block;
+    width: 100%;
+    padding: 0.2rem;
+    color: var(--darkColor);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align:center;
+}
+
+.wordLabelActive{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px rgb(150, 216, 255) solid;
+    padding: 0.2rem;
+    color:  var(--darkColor);
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    text-align:center;
+}
+
+.wordDetailsCategory{
+    width: 80%;
+    padding: 0.2rem;
+    margin: 0 0.5rem;
+    color:  var(--darkColor);
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align:center;
+    border: 1px  var(--darkColor) solid;
+    border-radius: 1rem;
+    margin: 0.2rem;
+}
+
+.markerButton{
+    display: inline-block;
+}
+
+.nameAndValueLabel{
+    display: inline-block;
+    width: 50%;
+    /*background-color: rgb(76, 105, 117);*/
+    padding: 0.1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align:left;
+    overflow-x:hidden;
+}
+
+.tableClass{
+    width:100%;
+    text-align:left;
+    padding-left: 0.2rem;
+}
+
+.colorPicker{
+    width: 0px;
+    height: 0px;
+}
+
+.checkBoxContainer {
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    text-align: left;
+    width: 20rem;
+    margin: 1rem 0.2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.checkBoxContainer input {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+  }
+
+.checkboxFaux {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(133, 195, 228);
+    border-radius: 0.2rem;
+    border: 2px solid rgb(44, 56, 66)
+  }
+
+.checkBoxContainer:hover input ~ .checkboxFaux {
+    background-color: rgb(88, 168, 214);
+  }
+  
+  .checkBoxContainer input:checked ~ .checkboxFaux {
+    background-color:rgb(44, 56, 66)
+  }
+  
+  .checkboxFaux:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkBoxContainer input:checked ~ .checkboxFaux:after {
+    display: block;
+  }
+  
+  .checkBoxContainer .checkboxFaux:after {
+    left: 0.35rem;
+    top: 0.1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: solid white;
+    border-width: 0 0.3rem 0.3rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .itemSelectorBkg{
+    width: 100%;
+    text-align: left;
+    height: 10rem;
+    overflow-y:auto;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(78, 78, 78);
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    background-color: var(--lightColor);
+}
+
+.itemSelectorItem{
+    display: inline-block;
+    color: var(--darkColor);
+    font-size: 1rem;
+    cursor:pointer;
+    width:100%;
+}
+
+.itemSelectorItem:hover{
+    background-color: rgb(67, 74, 78);
+    color:white;
+}
+
+.itemSelectorActiveItem{
+    display: inline-block;
+    color:white;
+    background-color: rgb(25, 30, 34);
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    padding-left: 0.2rem;
+    cursor:pointer;
+    width: 100%
+}
+
+.itemSelectorCurrentSelection{
+    height:1.8rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(36, 46, 66);
+    border-radius: 0.5rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+/*-------------------radio buttons-------------------*/
+
+.radioButtonsContainer input[type="radio"] {
+    display:none;
+  }
+  
+  .radioButtonsContainer span {
+    display: inline-block;
+    width:9rem;
+    height:4rem;
+    background-color:#3c8ab8;
+    padding: 1rem 0;
+    font-family:'Arial Black', sans-serif;
+    font-size:1rem;
+    border: 2px solid #444;
+    border-radius: 0.4rem;    
+    cursor:pointer;
+    color: var(--darkColor);
+    user-select: none;
+  }
+  
+  .radioButtonsContainer input[type="radio"]:checked + span { 
+    background-color:#00a2ff;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
+  }
+  
+  .radioButtonsContainer span:hover {
+    background-color:#4eb8ff;
+  }
+
+  .radioButtonReal{
+      position:absolute;
+  }
+
+  .radioButtonsButtonContainer{
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width:9rem;
+        height:4rem;
+        font-size: 1rem;
+        margin: 0 1rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;    
+  }
+
+  /*-------------end radio buttons-------------------*/
+  
+  .martContainerSpacer{
+    width:10%;
+    height: 10px;
+    float: left;
+  }
+  
+  .martButton {
+    display: inline-block;
+    background-color: var(--darkColor);
+    padding: 10px 0;
+    margin: 10px 20px;
+    font-family:'Arial Black', sans-serif;
+    font-size:1rem;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 0.4rem;  
+    cursor:pointer;
+    color: rgb(159, 255, 134);
+    width: 15%;
+    min-width: 100px;
+    padding: 10px 0;
+    user-select: none;
+  }
+  
+  .martButton:active{
+    background-color:#ff5100;
+  }
+
+
+  @keyframes elementAnimationFadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes elementAnimationFadeOut{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+  
+  
+
+ 
+
+
+
